@@ -1,5 +1,5 @@
 {
-  "originHash" : "15ae4d0d139754396aca06a388b561b89e9237010c7b8a280b467c62de192d7f",
+  "originHash" : "8b469eae50add1676ae07185185fd5994c355dc3497b650c1d7ee5b1cd2d9661",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/1220144667/BudCommon.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "dabf49fcf2250fdbe8dad70c48b55bc8965cb137"
+        "branch" : "developer",
+        "revision" : "2a71cd9134519b20e487f4ee54e6c590b8f4700f"
       }
     },
     {

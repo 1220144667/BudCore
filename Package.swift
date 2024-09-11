@@ -13,7 +13,7 @@ let package = Package(
             targets: ["BudCore"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/1220144667/BudCommon.git", branch: "main"),
+        .package(url: "https://github.com/1220144667/BudCommon.git", branch: "developer"),
         .package(url: "https://github.com/apple/swift-protobuf.git", exact: "1.27.1"),
         .package(url: "https://github.com/stephencelis/SQLite.swift.git", exact: "0.13.3"),
         .package(url: "https://github.com/jrendel/SwiftKeychainWrapper.git", exact: "4.0.1"),

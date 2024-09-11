@@ -11,8 +11,8 @@ import Foundation
 import SwiftKeychainWrapper
 import UIKit
 
-extension UIDevice {
-    public static func deviceUUID() -> String {
+public extension UIDevice {
+    static func deviceUUID() -> String {
         let keyDeviceID = "key_device_uuid"
         var resultString: String? = KeychainWrapper.standard.string(forKey: keyDeviceID)
 

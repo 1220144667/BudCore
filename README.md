@@ -1,0 +1,2 @@
+# BudCore
+BudChat IM Core

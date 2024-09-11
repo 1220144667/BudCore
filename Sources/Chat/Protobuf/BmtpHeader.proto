@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+message BmtpHeader {
+    string packId = 1;
+    BmtpPackType type = 2;
+    BmtpPackFlag flag = 3;
+    int64 version = 4;
+    int64 code = 5;
+}
+
+enum BmtpPackType {
+    PACK_TYPE_NONE            = 0;     //
+    PACK_TYPE_PING            = 1;     // 心跳
+    PACK_TYPE_LOGOUT          = 10;    // 登出
+    PACK_TYPE_KICKOUT         = 11;    // 踢出
+    PACK_TYPE_NOTE            = 19;    // 通知消息
+    PACK_TYPE_MSG_CHAT        = 20;    // 单聊消息
+    PACK_TYPE_MSG_GROUP_CHAT  = 21;    // 群聊消息
+}
+
+enum BmtpPackFlag {
+    PACK_FLAG_NONE       = 0;
+    PACK_FLAG_ACK        = 1;    // 是否请求响应。0000 0000 0000 0001
+    PACK_FLAG_DUP        = 2;    // 是否重发。0000 0000 0000 0010
+    PACK_FLAG_COUNTER    = 4;    // 是否计数。0000 0000 0000 0100
+    PACK_FLAG_OVERRIDE   = 8;    // 是否覆写。0000 0000 0000 1000
+    PACK_FLAG_REVOKE     = 16;   // 高优先级。0000 0000 0001 0000
+    PACK_FLAG_HIGHPRJ    = 32;   // 压缩算法。0000 0000 0010 0000
+    PACK_FLAG_COMPRESS   = 64;   // 加密算法。0000 0000 0100 0000
+}
